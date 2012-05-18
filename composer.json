@@ -1,0 +1,18 @@
+{
+    "name"        : "Deep is our soul",
+    "type"        : "app",
+    "version"     : "v0.1",
+    "description" : "Deep is our soul",
+    "require": {
+        "php"                           : ">=5.3.3",
+        "silex/silex"                   : "1.0.x-dev",
+        "twig/twig"                     : "1.6.5",
+        "monolog/monolog"               : ">=1.0.0",
+        "symfony/twig-bridge"           : "2.0.*",
+        "symfony/yaml"                  : "2.1.*",
+        "symfony/config"                : "2.0.*",
+        "fate/silex-extensions"         : "dev-master",
+        "kriswallsmith/assetic"         : "master",
+        "igorw/config-service-provider" : "dev-master"
+    }
+}
