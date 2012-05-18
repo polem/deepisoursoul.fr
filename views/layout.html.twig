@@ -12,54 +12,60 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/zocial/zocial.css">
 
-    <link rel="stylesheet" href="/js/libs/nivo-slider/themes/dios/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/js/libs/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/css/audiojs.css" />
+    <link rel="stylesheet" href="/js/libs/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 
     <script src="/js/libs/modernizr-2.5.2.min.js"></script>
 </head>
 <body>
     <div class="container">
+        <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
         <header>
-            <hgroup class="logo">
-                <h1>Deep is our soul</h1>
-                <h2>Live &amp House</h2>
+            <hgroup>
+                <h1 class="logo">Deep is our soul</h1>
+                <h2>Live &amp; Mix</h2>
             </hgroup>
         </header>
-        <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
         {% block content %}{% endblock %}
+
+        <footer>
+            <div id="player">
+            </div>
+        </footer>
     </div>
 
-    <footer>
-        <div id="player">
-        </div>
-        <nav>
-            <ul id="social">
-                <li>
-                    <a href="https://www.facebook.com/deepisoursoul" class="facebook">Facebook</a>
-                </li>
-                <li>
-                    <a href="http://soundcloud.com/groups/deep-is-our-soul" class="soundcloud">Souncloud</a>
-                </li>
-                <li class="last">
-                    <a href="http://www.youtube.com/watch?v=GPH9VdH3eEU" class="youtube">Youtube</a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
-        <script src="/js/plugins.js"></script>
-        <script src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/libs/fancybox/source/jquery.fancybox.pack.js?v=2.0.6"></script
 
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-                s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/script.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".youtube").fancybox({
+            padding     : 0,
+            margin      : 20,
+            fitToView   : false,
+            width       : '70%',
+            height      : '70%',
+            autoSize    : true,
+            closeClick  : true,
+            openEffect  : 'none',
+            closeEffect : 'none'
+        });
+    });
+    </script>
+
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
   </body>
 </html>

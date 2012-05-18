@@ -1,3 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis|Sue+Ellen+Francisco|Flamenco|Waiting+for+the+Sunrise|Reenie+Beanie|Vibur|Nothing+You+Could+Do|Quantico);
+
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Sue Ellen Francisco', cursive;
+font-family: 'Flamenco', cursive;
+font-family: 'Waiting for the Sunrise', cursive;
+font-family: 'Reenie Beanie', cursive;
+font-family: 'Vibur', cursive;
+font-family: 'Nothing You Could Do', cursive;
+font-family: 'Quantico', sans-serif;
+*/
+
 @font-face {
   font-family: 'EurostileLTStdMedium';
   src: url('../fonts/eurostileltstd-webfont.eot');
@@ -12,50 +25,22 @@
 
 html, body
 {
+  text-align: center;
   margin-top: 40px;
   background: #161616 url(../img/bg.png) repeat 0 0;
   color: #FFF;
+  color: #e01513;
 }
 
-#social
-{
-  float: right;
-}
-#social li
-{
-  float: left;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 0 16px;
-}
-#social li a
-{
-  display: block;
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
-  text-indent: -3000em;
-}
-#social li a.facebook
-{
-  background-image: url(../img/facebook.png);
-}
-#social li a.twitter
-{
-  background-image: url(../img/twitter.png);
-}
-#social li a.vimeo
-{
-  background-image: url(../img/vimeo.png);
-}
-#social li a.soundcloud
-{
-  background-image: url(../img/soundcloud.png);
-}
-
-#header
+header
 {
   border-bottom: 1px solid #242424;
+  margin-bottom: 20px;
+}
+
+.container
+{
+    width: 260px
 }
 
 #content
@@ -77,26 +62,10 @@ header .logo
   overflow: hidden;
 }
 
-ul#nav
-{
-  margin-top: 10px;
-}
-ul#nav li
-{
-  line-height: 1.5em;
-  font-family: 'EurostileLTStdMedium';
-  text-transform: uppercase;
-  font-size: 30px;
-  text-align: right;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-}
 
 h1, h2
 {
-  font-family: 'EurostileLTStdMedium';
+  font-family: 'Nothing You Could Do';
   text-transform: uppercase;
   font-size: 30px;
 }
@@ -129,3 +98,9 @@ footer
 {
   float:right;
 }
+
+body .zocial {
+    margin: 8px 4px;
+    font-size: 13px;
+}
+
